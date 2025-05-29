@@ -1,0 +1,28 @@
+html, body {
+    width: 99%;
+    max-width: 90%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+.custom-navbar {
+    background-color: #3A1356; // tu tono violeta oscuro
+    color: #ffffff;
+    
+  
+    .navbar-brand,
+    .nav-link {
+      color: #E0D7F5;
+  
+      &:hover {
+        color: #9576AB;
+      }
+    }
+  }
+  .container {
+    margin: 0 auto;  
+    max-width: 1200px; 
+    padding: 20px; 
+  }
+
+  
