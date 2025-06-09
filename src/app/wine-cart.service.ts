@@ -27,6 +27,14 @@ export class WineCartService {
     this.cartList.next(this._cartList);
     
     }
+
+    removeFromCart(wine: Wines): void {
+      const index = this._cartList.findIndex(item => item.wineName === wine.wineName);
+      if (index > -1) {
+        this._cartList.splice(index, 1); // lo quita del array
+        this.cartList.next([...this._cartList]); // actualiza el observable
+      }
+    }
   }
 
 
