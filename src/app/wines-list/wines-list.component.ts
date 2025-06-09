@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Wines } from './Wines';
+import {WineCartService} from '../wine-cart.service';
+import { ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-wines-list',
@@ -56,6 +58,18 @@ export class WinesListComponent{
       quantity:0,
     }
   ];
+
+ constructor(private cart:WineCartService, private cdr: ChangeDetectorRef){
+  
+ }
+  addToCart(wine: Wines):void{
+    this.cart.addToCart(wine);
+    wine.stock -= wine.quantity;
+    console.log(wine.stock);
+    wine.quantity=0;
+    this.cdr.detectChanges();
+  }
+
   maxReached(m:string){
     alert(m);
   }

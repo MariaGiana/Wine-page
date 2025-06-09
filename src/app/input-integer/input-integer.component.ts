@@ -35,13 +35,21 @@ export class InputIntegerComponent {
     this.quantity--;
     this.quantityChange.emit( this.quantity);
   }
-  changeQuantity(event: KeyboardEvent):void{
-    const key= event.key;
-    const allowedKeys = ['Backspace', 'ArrowLeft', 'ArrowRight', 'Tab'];
-    this.quantityChange.emit( this.quantity);
-
-    if (!/^\d$/.test(key) && !allowedKeys.includes(key)) {
-      event.preventDefault();
+  onInputChange(event: Event): void {
+    const input = event.target as HTMLInputElement;
+    let value = Number(input.value);
+  
+    if (isNaN(value) || value < 0) {
+      value = 0;
+    }
+  
+    if (value > this.max) {
+      value = this.max;
+      this.maxReached.emit("Reached the maximum in stock");
+    }
+  
+    this.quantity = value;
+    this.quantityChange.emit(this.quantity);
   }
-  }
+  
 }

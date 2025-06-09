@@ -3,6 +3,7 @@ h1{
   color: whitesmoke;
 
 }
+
 .violet-table {
     font-family: "garamond", serif;
     background-color: #1E1E2F;
@@ -23,6 +24,9 @@ h1{
       color: #F5F5F5;
       //vertical-align: middle;
     }
+    .description{
+      margin-bottom: 4px;
+    }
   
     tr:nth-child(even) td {
       background-color: #2A2A40;
@@ -33,6 +37,7 @@ h1{
       }
    
   }
+  
   .table td img {
     width: 100px;
     height: 100px;
@@ -46,7 +51,25 @@ h1{
     border: red solid 2px;
   }
   .table-responsive {
-    overflow-x: auto;
+    width: 100%;    
+    max-width: 100%;
+  }
+  .btn-custom {
+    background-color:#3A1356;
+    color: #E0D7F5;
+    border: none;
+    border-radius: 0.375rem;
+    padding: 6px 12px;
+    font-weight: 500;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-custom:hover {
+    background-color: #3A3A50;
   }
   
 

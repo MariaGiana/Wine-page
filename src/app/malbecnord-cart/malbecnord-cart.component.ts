@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import {WineCartService} from '../wine-cart.service';
+import { Wines } from '../wines-list/Wines';
 
 @Component({
   selector: 'app-malbecnord-cart',
@@ -6,6 +8,12 @@ import { Component } from '@angular/core';
   templateUrl: './malbecnord-cart.component.html',
   styleUrl: './malbecnord-cart.component.scss'
 })
-export class MalbecnordCartComponent {
-
+export class MalbecnordCartComponent implements OnInit {
+  
+  cartList:Wines[]=[];
+  constructor(private cart: WineCartService) { 
+    cart.cartList.subscribe(cart => {
+      this.cartList = cart;});
+  }
+  ngOnInit(): void {}
 }

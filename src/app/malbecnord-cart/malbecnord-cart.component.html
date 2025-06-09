@@ -1,1 +1,8 @@
 <h1>Cart</h1>
+
+<ul>
+    <li *ngFor="let wine of cartList">
+        {{wine.wineName}}: {{wine.quantity}}
+
+    </li>
+</ul>

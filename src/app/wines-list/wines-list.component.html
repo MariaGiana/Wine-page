@@ -8,10 +8,10 @@
         <th>Wine´s Name</th>
         <th>Grape variety</th>
         <th>Winery</th>
-        <th>Description</th>
         <th>Price</th>
         <th>Stock</th>
         <th>Shopping</th>
+        <th>Add to Cart</th>
       </tr>
     </thead>
     <tbody>
@@ -27,12 +27,12 @@
      </tr>-->
      
      @for (wine of wines; track wine.wineName){
+      
         <tr [ngClass]="{'clearance':wine.clearance}">
         <td><img [src]="wine.image" alt="{{wine.wineName}}" class="img-fluid" style="max-width: 200px;"></td>
         <td>{{wine.wineName | uppercase}}</td>
         <td>{{wine.winery}}</td>
         <td>{{wine.grapeVariety}}</td>
-        <td>{{wine.description}}</td>
         @if(wine.clearance==true){
         <td>{{wine.price | currency:'DKK'}}<span class="badge text-bg-warning">Discount</span></td>
         }@else {
@@ -46,10 +46,25 @@
     } 
     <td>
      <app-input-integer [(quantity)]="wine.quantity" [max]="wine.stock" (maxReached)="maxReached($event)"   *ngIf="wine.stock"></app-input-integer>
-     Cant={{wine.quantity}}
+    </td>
+    <td>
+      <div class="d-flex justify-content-center">
+      <button class="btn btn-sm btn-custom" (click)="addToCart(wine)">
+        <i class="bi bi-cart-plus"></i>
+      </button>
+    </div>
     </td>
        
     </tr>
+    
+    <tr>
+     
+      <td colspan="8" class="text-start ps-4">
+        <strong>Description:</strong> {{ wine.description }}
+      </td>
+    
+    </tr>
+  
        }
        
 
