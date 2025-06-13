@@ -13,6 +13,8 @@ import { MalbecnordPrincipalComponent } from './malbecnord-principal/malbecnord-
 import { MalbecnordCartComponent } from './malbecnord-cart/malbecnord-cart.component';
 import { InputIntegerComponent } from './input-integer/input-integer.component';//para que reconozca el input
 
+import{HttpClientModule} from'@angular/common/http'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,8 @@ import { InputIntegerComponent } from './input-integer/input-integer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration(withEventReplay())
