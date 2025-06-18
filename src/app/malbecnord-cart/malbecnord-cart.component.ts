@@ -19,7 +19,7 @@ export class MalbecnordCartComponent implements OnInit {
   ngOnInit(): void {}
 
   removeFromCart(wine: Wines): void {
-    this.cart.removeFromCart(wine); // Tenés que implementarlo en tu servicio si no lo hiciste
+    this.cart.removeFromCart(wine); 
   }
   
 }
