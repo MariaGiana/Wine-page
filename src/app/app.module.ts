@@ -14,6 +14,7 @@ import { FormContactComponent } from './form-contact/form-contact.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { WineDetailComponent } from './wine-detail/wine-detail.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     MalbecnordPrincipalComponent,
     MalbecnordCartComponent,
     InputIntegerComponent,
-    FormContactComponent
+    FormContactComponent,
+    WineDetailComponent
   ],
   imports: [
     BrowserModule,

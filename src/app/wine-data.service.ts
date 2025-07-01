@@ -20,4 +20,8 @@ export class WineDataService {
       tap( (wine:Wines[]) => wine.forEach (wine => wine.quantity=0))
     )
   }
+
+  public getById(id: string): Observable<Wines> {
+    return this.http.get<Wines>(`${URL}/${id}`);
+  }
 }
