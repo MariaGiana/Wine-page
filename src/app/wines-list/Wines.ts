@@ -1,5 +1,6 @@
 export interface Wines {
-    wineName: string;
+      id: number;
+      wineName: string;
       grapeVariety: string;
       winery: string;
       description: string;

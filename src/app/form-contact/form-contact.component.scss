@@ -1,0 +1,72 @@
+.contact-section {
+    background-color: #1E1E2F;
+    color: #f4f4f4;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #2A2A3D;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #E0B973; /* Dorado elegante */
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+  }
+  
+  .form-label {
+    color: #dcdcdc;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    background-color: #3A3A4F;
+    border: 1px solid #555;
+    color: #f4f4f4;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #E0B973;
+    outline: none;
+    box-shadow: 0 0 5px #E0B973aa;
+  }
+  
+  .btn-primary {
+    background-color: #E0B973;
+    border-color: #E0B973;
+    color: #1E1E2F;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #d2a856;
+    border-color: #d2a856;
+    color: #1E1E2F;
+  }
+
+  .invalid {
+    color: red;
+    background-color: #3A3A4F;
+    border: 1px solid #555;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+  }
+  

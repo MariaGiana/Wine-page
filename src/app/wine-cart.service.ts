@@ -29,21 +29,14 @@ export class WineCartService {
     }
 
     removeFromCart(wine: Wines): void {
-      // Busco el vino en el carrito
       const index = this._cartList.findIndex(item => item.wineName === wine.wineName);
-    
       if (index > -1) {
-        // Devuelvo la cantidad al stock
-        wine.stock += wine.quantity;
-        console.log(wine.stock);
-    
-        // Quito el vino del carrito
         this._cartList.splice(index, 1);
-    
-        // Aviso a todos los que escuchan el carrito que se actualizó
         this.cartList.next([...this._cartList]);
+        console.log(wine.stock);
       }
     }
+    
   }
 
 

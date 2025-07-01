@@ -28,7 +28,6 @@ export class WinesListComponent{
   addToCart(wine: Wines):void{
     this.cart.addToCart(wine);
     wine.stock -= wine.quantity;
-    console.log(wine.stock);
     wine.quantity=0;
     this.cdr.detectChanges();
   }
@@ -37,6 +36,18 @@ export class WinesListComponent{
     alert(m);
   }
 
+
+  removeFromCart(wine: Wines): void {
+    // Busco el vino original por nombre
+    const originalWine = this.wines.find(w => w.wineName === wine.wineName);
+  
+    if (originalWine) {
+      originalWine.stock += wine.quantity; // devolvemos al stock
+    }
+  
+    // Removemos del carrito usando el servicio
+    this.cart.removeFromCart(wine);
+  }
 }
   
 
