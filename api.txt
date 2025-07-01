@@ -1,0 +1,144 @@
+[
+{
+"wineName": "Luigi Bosca de Sangre",
+"grapeVariety": "Cabernet Sauvignon",
+"winery": "Familia Arizu",
+"description": "A full-bodied red wine with dark fruit flavors and savory tastes from black currant to tobacco.",
+"price": 149.99,
+"image": "assets/img/luigiBosca.png",
+"stock": 23,
+"clearance": false,
+"id": "1"
+},
+{
+"wineName": "LUI Malbec",
+"grapeVariety": "Malbec",
+"winery": "LUI - Mendoza, Argentina",
+"description": "Intense red with violet tones, aromas of ripe red fruits and soft tannins.",
+"price": 99.99,
+"image": "assets/img/lui-malbec.png",
+"stock": 30,
+"clearance": false,
+"id": "2"
+},
+{
+"wineName": "Black Ranch Bonarda",
+"grapeVariety": "Bonarda",
+"winery": "Bodega Fantelli - Black Ranch - Mendoza, Argentina",
+"description": "Fresh and juicy Bonarda with floral notes and medium body.",
+"price": 89.99,
+"image": "assets/img/black-ranch-bonarda.png",
+"stock": 18,
+"clearance": false,
+"id": "3"
+},
+{
+"wineName": "LUI Blend",
+"grapeVariety": "Malbec & Cabernet Franc",
+"winery": "LUI - Mendoza, Argentina",
+"description": "Complex and elegant blend with layers of red fruit and spice.",
+"price": 129.99,
+"image": "assets/img/lui-blend.png",
+"stock": 25,
+"clearance": false,
+"id": "4"
+},
+{
+"wineName": "Fantelli Syrah",
+"grapeVariety": "Syrah",
+"winery": "Bodega Fantelli - Mendoza",
+"description": "Bold and spicy Syrah with dark plum and peppery finish.",
+"price": 94.5,
+"image": "assets/img/fantelli-syrah.png",
+"stock": 20,
+"clearance": true,
+"id": "5"
+},
+{
+"wineName": "LUI Cabernet Franc",
+"grapeVariety": "Cabernet Franc",
+"winery": "LUI - Mendoza, Argentina",
+"description": "Elegant and aromatic, herbal and mineral tones with great balance.",
+"price": 119,
+"image": "assets/img/lui-cabfranc.png",
+"stock": 12,
+"clearance": false,
+"id": "6"
+},
+{
+"wineName": "Black Ranch Malbec",
+"grapeVariety": "Malbec",
+"winery": "Bodega Fantelli - Mendoza",
+"description": "Classic Mendoza Malbec with juicy red fruit and soft tannins.",
+"price": 84.75,
+"image": "assets/img/black-ranch-malbec.png",
+"stock": 34,
+"id": "7"
+},
+{
+"wineName": "LUI Rosé",
+"grapeVariety": "Malbec Rosé",
+"winery": "LUI - Mendoza, Argentina",
+"description": "Fresh rosé with aromas of strawberry and citrus, ideal for summer.",
+"price": 74.99,
+"image": "assets/img/lui-rose.png",
+"stock": 15,
+"clearance": true,
+"id": "8"
+},
+{
+"wineName": "Fantelli Merlot",
+"grapeVariety": "Merlot",
+"winery": "Bodega Fantelli - Mendoza",
+"description": "Smooth and easy-drinking Merlot with plum and vanilla notes.",
+"price": 92,
+"image": "assets/img/fantelli-merlot.png",
+"stock": 22,
+"clearance": false,
+"id": "9"
+},
+{
+"wineName": "LUI Reserva Malbec",
+"grapeVariety": "Malbec",
+"winery": "LUI - Mendoza, Argentina",
+"description": "Barrel-aged Malbec with structure, depth and intense character.",
+"price": 155,
+"image": "assets/img/lui-reserva.png",
+"stock": 10,
+"clearance": false,
+"id": "10"
+},
+{
+"wineName": "Trapiche Chardonnay",
+"grapeVariety": "Chardonnay",
+"winery": "Trapiche",
+"description": "A rich and creamy white wine with hints of ripe fruit, butter, and vanilla.",
+"price": 59.49,
+"image": "assets/img/trapicheChardonnay.png",
+"stock": 57,
+"clearance": true,
+"id": "11"
+},
+{
+"wineName": "Nieto Senetiner",
+"grapeVariety": "Pinot Noir",
+"winery": "Nieto Senetiner",
+"description": "A light and elegant red wine with notes of cherry, strawberry, and a hint of spice.",
+"price": 129.99,
+"image": "assets/img/nietoSenetinerNoir.png",
+"stock": 0,
+"clearance": false,
+"id": "12"
+},
+{
+"wineName": "Reservado",
+"grapeVariety": "Cabernet Sauvignon",
+"winery": "Concha e Toro",
+"description": "A full-bodied red wine with dark fruit flavors and savory tastes from black currant to tobacco.",
+"price": 49.99,
+"image": "assets/img/reservado.png",
+"stock": 15,
+"clearance": false,
+"id": "13"
+}
+]

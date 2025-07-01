@@ -14,7 +14,7 @@
   <div class="mb-3">
     <label for="confirmEmail" class="form-label">Confirm email*</label>
     <input type="confirmEmail" formControlName="confirmEmail"  [class.invalid]="formContact.get('confirmEmail')?.valid===false" id="confirmEmail" name="confirmEmail" />
-    <p *ngIf="formContact.get('confirmEmail')?.touched && formContact.hasError('emailMisMatch')">The email must match</p>    
+    <p class="alert" *ngIf="formContact.get('confirmEmail')?.touched && formContact.hasError('emailMisMatch')">The email must match</p>    
 </div>
 
   <div class="mb-3">
@@ -29,7 +29,10 @@
 
   <button [disabled]="formContact.invalid" type="submit" class="btn btn-primary">Send</button>
 
-  <p>* Requiered fields</p>
+<div >
+    <p class="alert">* Requiered fields</p>
+</div>
+ 
 </form>
 
 <!--Para ver la instancia del objeto en cada input a tiempo real
