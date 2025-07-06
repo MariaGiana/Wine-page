@@ -33,6 +33,10 @@
     <p class="alert">* Requiered fields</p>
 </div>
  
+@if(isSuccess) { <div class="badge text-bg-success">{{ informationMessage }}</div>
+}@else{
+   <div class="badge text-bg-danger">{{ informationMessage }}</div>}
+
 </form>
 
 <!--Para ver la instancia del objeto en cada input a tiempo real
