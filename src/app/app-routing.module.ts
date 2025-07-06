@@ -4,6 +4,7 @@ import { MalbecnordPrincipalComponent } from './malbecnord-principal/malbecnord-
 import { MalbecnordAboutComponent } from './malbecnord-about/malbecnord-about.component';
 import { FormContactComponent } from './form-contact/form-contact.component';
 import { WineDetailComponent } from './wine-detail/wine-detail.component';
+import { MalbecnordCartComponent } from './malbecnord-cart/malbecnord-cart.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,9 @@ const routes: Routes = [
   {
     path: 'wines',
     component: MalbecnordPrincipalComponent,
+  },{
+  path: 'cart',
+    component: MalbecnordCartComponent,
   },
   {
     path: 'about',
