@@ -37,17 +37,7 @@ export class WinesListComponent{
   }
 
 
-  removeFromCart(wine: Wines): void {
-    // Busco el vino original por nombre
-    const originalWine = this.wines.find(w => w.wineName === wine.wineName);
-  
-    if (originalWine) {
-      originalWine.stock += wine.quantity; // devolvemos al stock
-    }
-  
-    // Removemos del carrito usando el servicio
-    this.cart.removeFromCart(wine);
-  }
+
 }
   
 

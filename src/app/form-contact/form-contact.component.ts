@@ -52,7 +52,7 @@ export class FormContactComponent {
     if (this.formContact.valid) {
       this.CustomersService.postMessages(contactToSend).subscribe({
         next: (response) => {
-          console.log('Contact sended:', response);
+          //console.log('Contact sended:', response);
           this.informationMessage = '¡Your message was correctly send!';
           this.isSuccess=true;
           this.formContact.reset();
