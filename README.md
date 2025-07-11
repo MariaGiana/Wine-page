@@ -2,9 +2,10 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
 
-🍷 Proyecto: Web de Venta de Vinos Argentinos en Dinamarca  
-📝 Descripción del proyecto:  
-Este proyecto consiste en el desarrollo de una aplicación web para la venta de vinos importados de Argentina en Dinamarca. La idea surgió como una colaboración con unos amigos que están iniciando un pequeño emprendimiento en Europa, con el objetivo de ofrecer vinos de calidad en un mercado internacional.  
+Proyecto: *Web de Venta de Vinos Argentinos en Dinamarca*  
+  
+Descripción del proyecto:  
+Este proyecto consiste en el desarrollo de una aplicación web para la venta de vinos importados de Argentina en Dinamarca. La idea surgió como una colaboración con unos amigos que están iniciando un pequeño emprendimiento en Europa.  
   
 La aplicación está desarrollada con Angular y reproduce una tienda online básica donde los usuarios pueden:  
   
@@ -16,20 +17,20 @@ La aplicación está desarrollada con Angular y reproduce una tienda online bás
 
 - Navegar entre diferentes secciones como "Inicio", "Nosotros", "Contacto" y "Carrito"  
   
-🎯 Objetivo  
+Objetivo  
 Aplicar los conocimientos adquiridos durante el curso para construir una Single Page Application (SPA) desarrollada con Angular, que demuestre el uso de:  
   
-**Componentes  
+**Componentes**  
 
-**Servicios  
+**Servicios**  
 
-**Data binding  
+**Data binding**  
 
-**Comunicación entre componentes  
+**Comunicación entre componentes**  
 
-**Routing  
+**Routing**  
 
-**Observables con RxJS  
+**Observables con RxJS**  
   
 DATOS:  
 - Nombre y Apellido: Maria Jose Giannaccini  
